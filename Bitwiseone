@@ -1,0 +1,18 @@
+def BITOR(s1,s2):
+  if(s1=='0'and s2=='0'):
+    return '0'
+  return '1'
+
+
+def BitwiseOne(strArr):
+  str1 ,str2 = strArr
+  result = ''
+  for i in range(len(str1)):
+    result = result + BITOR(str1[i],str2[i])
+
+
+  # code goes here
+  return result
+
+# keep this function call here 
+print(BitwiseOne(input()))
